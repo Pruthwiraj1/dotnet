@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: pruthwirajdotnet 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pruthwirajdotnet
+  template:
+    metadata:
+      labels:
+        app: pruthwirajdotnet 
+    spec:
+      containers:
+        - name: pruthwirajdotnet 
+          image: pruthwi.azurecr.io/pruthwirajdotnet
+          ports:
+          - containerPort: 5000
