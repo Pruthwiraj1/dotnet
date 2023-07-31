@@ -19,7 +19,7 @@ variables:
   imagePullSecret: 'pruthwidaa6-auth'
 
   # Agent VM image name
-  vmImageName: 'assignment'
+  vmImageName: 'myagent'
 
 
 stages:
